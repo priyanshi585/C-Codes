@@ -1,0 +1,22 @@
+Question: Write a C program to calculate simple interest.
+
+Code: 
+#include <stdio.h>
+int main() {
+    
+  float P,SI;
+  int R,T;
+  printf("Enter Principle, Rate, Time\n");
+  scanf("%f",&P);
+  scanf("%d%d",&R,&T);
+  SI= (P*R*T)/100;
+  printf("Simple Interest= %f\n",SI);
+  return 0;
+}
+
+Output :
+Enter Principle, Rate, Time
+2000
+20
+10
+Simple Interest= 4000.000000
