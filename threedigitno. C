@@ -1,0 +1,22 @@
+Question: Write a C program to read in a three digit number produce following output (assuming that the input is 347)-
+3 hundreds, 4 tens, 7 units
+
+Code:
+#include <stdio.h>
+int main() {
+    
+ int num , hun, tens,unit;
+ printf("Enter a three digit number:\n");
+ scanf("%d",&num);
+ hun=num/100;
+ num=num%100;
+ tens=num/10;
+ unit=num%10;
+ printf("%d hundreds %d tens %d units",hun,tens,unit);
+ return 0;
+}
+
+Output : 
+Enter a three digit number:
+347
+3 hundreds 4 tens 7 units
